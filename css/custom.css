@@ -162,3 +162,41 @@ body.home .stars-bg {
         font-size: 2rem;
     }
 }
+/* Destination page backgrounds */
+body.destination .stars-bg {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+}
+
+@media (min-width: 768px) {
+    body.destination .stars-bg {
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+    }
+}
+
+@media (min-width: 992px) {
+    body.destination .stars-bg {
+        background-image: url(../assets/destination/background-destination-desktop.jpg);
+    }
+}
+
+/* Destination tabs styling */
+.destination-tabs .nav-link {
+    color: var(--clr-accent);
+    background: transparent;
+    border-bottom: 3px solid transparent;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 1rem;
+    transition: all 0.3s ease;
+}
+
+.destination-tabs .nav-link:hover {
+    color: var(--clr-white);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.destination-tabs .nav-link.active {
+    color: var(--clr-white);
+    background: transparent;
+    border-bottom-color: var(--clr-white);
+}
